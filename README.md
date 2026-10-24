@@ -159,15 +159,28 @@ Feature importance shows what the model *uses*, but not what *causes* the label.
 
 ## How to run
 
-```bash
-git clone https://github.com/Sanvi09Kulkarni/load-type-prediction.git
-cd load-type-prediction
+**Requirements:** Python 3.9 or newer.
 
+```bash
+# 1. Clone the repository
+git clone https://github.com/Sanvi09Kulkarni/Assessment2-USEReady.git
+cd Assessment2-USEReady
+
+# 2. Create and activate a virtual environment
 python -m venv .venv
-source .venv/bin/activate        # Windows: .venv\Scripts\activate
+.venv\Scripts\activate            # Windows (cmd)
+# source .venv/bin/activate       # macOS / Linux
+
+# 3. Install dependencies
 pip install -r requirements.txt
 
+# 4. Launch the notebook
 jupyter notebook notebooks/load_type_prediction.ipynb
+```
+
+Choose **Run All**. The notebook runs top to bottom in under a minute with a fixed random seed (`42`). It regenerates every figure in `reports/figures/`, the result tables in `reports/`, and the saved model in `models/` (not committed to the repo because it is generated).
+
+The dataset is already included in `data/raw/`, so no extra download is needed.
 ```
 
 Choose **Run All**. The notebook runs top to bottom in under a minute, uses a fixed random seed (`42`), and regenerates every figure, result table and the saved model.
