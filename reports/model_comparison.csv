@@ -1,0 +1,6 @@
+Model,CV Macro F1,Accuracy,Precision,Recall,Macro F1
+Logistic Regression,0.757,0.659,0.545,0.545,0.543
+Decision Tree,0.939,0.917,0.89,0.944,0.912
+Random Forest,0.956,0.955,0.945,0.953,0.949
+XGBoost,0.956,0.951,0.952,0.935,0.943
+LightGBM,0.955,0.951,0.949,0.939,0.944
